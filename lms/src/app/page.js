@@ -13,24 +13,31 @@ export default function Home() {
             <button className="btn" type="submit">Search</button>
         </form>
         </div>
-            <div className="pay">
-                <p>Check out & Payment</p>
+        <div className="pay">
+            <p>Check out & Payment</p>
+            <div className="logos">
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
                 <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
                 </a>
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                <img src="/images/walmart.png" alt="PayPal" className="payment-images" />
                 </a>
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                <img src="/images/apple.png" alt="PayPal" className="payment-images" />
                 </a>
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                <img src="/images/microsoft.png" alt="PayPal" className="payment-images" />
                 </a>
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                <img src="/images/mastercard.png" alt="PayPal" className="payment-images" />
                 </a>
             </div>
-        </div>
+            </div>
+            <div className="category">
+                <div className="category-list">
+                    <h1>Leran From The Best</h1>
+                </div>
+            </div>
+            </div>
     );
 }

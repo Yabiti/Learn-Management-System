@@ -86,7 +86,35 @@ html{
   margin-top: 40px;
 }
 
-.payment-images {
-  width: 120px;
+.pay p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pay a {
+  display: flex;
+  justify-content: center;
+}
+
+.pay a img {
+  width: 100px;
+  height: 50px;
   cursor: pointer;
+}
+
+.pay {
+  flex-direction: column;
+}
+
+.pay .logos {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category{
+  padding: 20px;
+  text-align: center;
 }
