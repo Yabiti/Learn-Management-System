@@ -18,7 +18,18 @@ export default function Home() {
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
                 <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
                 </a>
-
+                <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                </a>
+                <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                </a>
+                <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                </a>
+                <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
+                </a>
             </div>
         </div>
     );
