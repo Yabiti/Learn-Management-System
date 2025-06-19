@@ -12,5 +12,5 @@ export default function Navbar(){
                 <Link href="/">Student Enrollment</Link>
             </div>
         </nav>
-    )
+    );
 }
