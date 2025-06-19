@@ -15,7 +15,10 @@ export default function Home() {
         </div>
             <div className="pay">
                 <p>Check out & Payment</p>
-                <img src="images/paypal"/>
+                <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/paypal.png" alt="PayPal" width="120" />
+                </a>
+
             </div>
         </div>
     );
