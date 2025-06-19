@@ -1,11 +1,13 @@
-import link from "next/link";
+import Link from "next/link";
 
 export default function Navbar(){
     return(
-        <nav>
-            <h1>EduCore</h1>
-            <link href="/">Educator Dashboard</link>
-            <link href="/">Student Enrollment</link>
+        <nav className="navbar">
+            <div>
+                <h1>EduCore</h1>
+            </div>
+            <Link href="/">Educator Dashboard</Link>
+            <Link href="/">Student Enrollment</Link>
         </nav>
     )
 }
