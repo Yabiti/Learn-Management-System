@@ -16,7 +16,7 @@ export default function Home() {
             <div className="pay">
                 <p>Check out & Payment</p>
                 <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/paypal.png" alt="PayPal" className="payment-method" />
+                <img src="/images/paypal.png" alt="PayPal" className="payment-images" />
                 </a>
 
             </div>
