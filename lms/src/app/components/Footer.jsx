@@ -20,7 +20,7 @@ export default function Footer(){
                 </div>
                 <div className="subscribe">
                     <h3>Subscribe for fresh lessons, helpful tips, and course updates.</h3>
-                    <p>Subscribe to get the latest courses, exclusive discounts,<br/> and expert learning tips directly in your inbox.</p>
+                    <p className="par">Subscribe to get the latest courses, exclusive discounts,<br/> and expert learning tips directly in your inbox.</p>
                 </div>
             </footer>
             </div>
