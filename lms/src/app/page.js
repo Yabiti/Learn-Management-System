@@ -36,7 +36,7 @@ export default function Home() {
             <div className="category">
                 <div className="category-list">
                     <h1>Learn From The Best</h1>
-                    <p>Unlock your potential through interactive lessons and real-world projects.</p>
+                    <p className="pa">Unlock your potential through interactive lessons and real-world projects.</p>
                 </div>
             </div>
             </div>

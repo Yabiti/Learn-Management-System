@@ -121,3 +121,8 @@ html{
   font-size: 30px;
   font-weight: bold;
 }
+
+.pa{
+  font-weight: normal;
+  font-size: small;
+}
