@@ -6,7 +6,7 @@ export default function Footer(){
         <footer className="navbar">
             <div className="logo">
                 <h1>EduCore</h1>
-                <p>Learn anytime, anywhere. EduCore helps you grow your skills and reach your goals — one lesson at a time.</p>
+                <p>Learn anytime, anywhere. EduCore helps you grow your <br/>skills and reach your goals — one lesson at a time.</p>
             </div>
         </footer>
     );
