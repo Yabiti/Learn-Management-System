@@ -1,4 +1,4 @@
-export const video = [
+export const videos = [
     {
         id: 1,
         url: 'https://www.youtube.com/embed/ajdRvxDWH4w',

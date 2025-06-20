@@ -1,4 +1,4 @@
-
+import {videos} from '../componets/videocard.jsx';
 
 export default function Home() {
     return(
