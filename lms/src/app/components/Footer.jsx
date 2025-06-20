@@ -7,7 +7,7 @@ export default function Footer(){
             <footer className="footer">
                 <div className="loggo">
                     <h1>EduCore</h1>
-                <   p className="pa">Learn anytime, anywhere. EduCore helps you grow your <br/>skills and reach your goals — one lesson at a time.</p>
+                    <p className="pa">Learn anytime, anywhere. EduCore helps you grow your <br/>skills and reach your goals — one lesson at a time.</p>
                 </div>
                 <div className="company">
                     <h3 className="c">Company</h3>
@@ -21,6 +21,10 @@ export default function Footer(){
                 <div className="subscribe">
                     <h3>Subscribe for fresh lessons, helpful tips, and course updates.</h3>
                     <p className="par">Subscribe to get the latest courses, exclusive discounts,<br/> and expert learning tips directly in your inbox.</p>
+                <form className="form">
+                    <input className="input-type" type="text"  placeholder="Enter Your Email" />
+                    <button className="btn" type="submit">Search</button>
+                </form>
                 </div>
             </footer>
             </div>
