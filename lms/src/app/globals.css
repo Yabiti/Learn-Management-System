@@ -198,24 +198,54 @@ html{
 
 }
 
-.company {
+
+.footer{
+  background-color:  #C0C0C0;
+ 
+}
+
+.company{
   display: flex;
   flex-direction: column;
-  padding-right: 800px;
-}
-
-
-.company ul {
-  list-style: none;
-  padding: 15px;
   text-align: center;
-}
-
-.company li {
-  margin-bottom: 8px;
 }
 
 .c{
   font-weight: bold;
-  padding-left: 35px;
+  position: relative;
+  top: -90px;
+}
+
+.loggo{
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 160px;
+  text-align: left;
+  top: -70px;
+  position: relative;
+  padding-left: 45px;
+  line-height: 30px;
+}
+
+
+.subscribe{
+  text-align: right;
+  top: -200px;
+  position: relative;
+  padding-right: 150px;
+  font-weight: bold;
 }

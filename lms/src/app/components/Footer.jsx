@@ -4,8 +4,8 @@ import "../globals.css";
 export default function Footer(){
     return(
         <div>
-            <footer className="navbar">
-                <div className="logo">
+            <footer className="footer">
+                <div className="loggo">
                     <h1>EduCore</h1>
                 <   p className="pa">Learn anytime, anywhere. EduCore helps you grow your <br/>skills and reach your goals — one lesson at a time.</p>
                 </div>
@@ -18,8 +18,8 @@ export default function Footer(){
                         <li><Link href="/">Privacy & Policy</Link></li>
                     </ul>
                 </div>
-                <div className="subscrib">
-                    <h3>Subscribe To Our Newsletter</h3>
+                <div className="subscribe">
+                    <h3>Subscribe for fresh lessons, helpful tips, and course updates.</h3>
                 </div>
             </footer>
             </div>
