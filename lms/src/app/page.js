@@ -41,13 +41,21 @@ export default function Home() {
             </div>
             <div className='video-editor'>
                 {videos.map(video => (
-                    <div key={video.id}>
+                    <div key={video.id} className='video-card'>
                         <iframe
                         src={video.url}
                         title={video.title}
+                        name={video.name}
+                        rating={video.rating}
                         ></iframe>
-                        <h3>{video.title}</h3>
+                        <div className='video-details'>
+                        <h3 className='title'>{video.title}</h3>
+                        <p>{video.name}</p>
+                        <div className="rating">
+                            {'★'.repeat(video.rating) + '☆'.repeat(5 - video.rating)}
+                        </div>
                         <p>{video.price}</p>
+                    </div>
                     </div>
                 ))}
             </div>
