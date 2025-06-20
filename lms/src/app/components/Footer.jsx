@@ -18,6 +18,9 @@ export default function Footer(){
                         <li><Link href="/">Privacy & Policy</Link></li>
                     </ul>
                 </div>
+                <div className="subscrib">
+                    <h3>Subscribe To Our Newsletter</h3>
+                </div>
             </footer>
             </div>
     );
