@@ -39,6 +39,19 @@ export default function Home() {
                     <p className="pa">Unlock your potential through interactive lessons and real-world projects.</p>
                 </div>
             </div>
+
+            <div className='video-editor'>
+                {videos.map((video) => {
+                    <div key={video.id}>
+                        <iframe
+                        src={video.url}
+                        title={video.title} 
+                        ></iframe>
+                        <h3>{video.title}</h3>
+                        <p>{price}</p>
+                    </div>
+                })}
+            </div>
             </div>
     );
 }
