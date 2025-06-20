@@ -64,4 +64,3 @@ export const videos = [
         price: '39.99$$'
     }
 ]
-
