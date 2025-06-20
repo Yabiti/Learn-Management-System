@@ -197,3 +197,25 @@ html{
   background-color: #001F3F;
 
 }
+
+.company {
+  display: flex;
+  flex-direction: column;
+  padding-right: 800px;
+}
+
+
+.company ul {
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+}
+
+.company li {
+  margin-bottom: 8px;
+}
+
+.c{
+  font-weight: bold;
+  padding-left: 35px;
+}
