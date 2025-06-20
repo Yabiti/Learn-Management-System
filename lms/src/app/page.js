@@ -66,6 +66,11 @@ export default function Home() {
                     </div>
                 ))}
             </div>
+            {VisibleCount < videos.length &&(
+                <div className='loadmore-btn'>
+                    <button onClick={Handleloadmore} className='btn'>Load More</button>
+                </div>
+            )}
             </div>
     );
 }
