@@ -2,7 +2,12 @@ import { useState } from 'react';
 import {videos} from './components/videocard.jsx';
 
 export default function Home() {
-    const VisibleCount= [Count, SetvisibleCount] , useState(0)
+    const VisibleCount= [Count, SetvisibleCount] = useState(0);
+    const Handleloadmore = () => {
+        setVisibleCount(prev => prev + 4);
+    };
+
+    const visiblevideos = videos.slice(0, VisibleCount)
     return(
         <div>
         <div className="Home-page">
