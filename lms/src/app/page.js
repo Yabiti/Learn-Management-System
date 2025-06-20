@@ -1,13 +1,14 @@
+'use client';
 import { useState } from 'react';
 import {videos} from './components/videocard.jsx';
 
 export default function Home() {
-    const VisibleCount= [Count, SetvisibleCount] = useState(0);
+    const[Count,  setVisibleCount] = useState(4);
     const Handleloadmore = () => {
-        setVisibleCount(prev => prev + 4);
+         setVisibleCount(prev => prev + 4);
     };
 
-    const visiblevideos = videos.slice(0, VisibleCount)
+    const visiblevideos = videos.slice(0, Count)
     return(
         <div>
         <div className="Home-page">
@@ -47,7 +48,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='video-editor'>
-                {videos.map(video => (
+                {visiblevideos.map(video => (
                     <div key={video.id} className='video-card'>
                         <iframe
                         src={video.url}
@@ -66,9 +67,9 @@ export default function Home() {
                     </div>
                 ))}
             </div>
-            {VisibleCount < videos.length &&(
-                <div className='loadmore-btn'>
-                    <button onClick={Handleloadmore} className='btn'>Load More</button>
+            {Count < videos.length &&(
+                <div className='loadmore'>
+                    <button onClick={Handleloadmore} className='load-btn'>Load More</button>
                 </div>
             )}
             </div>

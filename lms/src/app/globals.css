@@ -128,8 +128,9 @@ html{
 }
 
 .video-editor {
-  padding-left: 120px;
-  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+  padding: 20px 120px 0 120px;
   gap: 30px;
 }
 .video-card {
@@ -157,7 +158,7 @@ html{
 }
 
 .video-details {
-  padding: 10px 15px; /* Add space around the text */
+  padding: 10px 15px;
 }
 
 .video-details h3 {
@@ -172,4 +173,27 @@ html{
 
 .title{
   font-weight: bold;
+}
+
+.loadmore {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.load-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:  #001F3F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-btn:hover {
+  background-color: #001F3F;
+
 }
