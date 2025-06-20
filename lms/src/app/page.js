@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import {videos} from './components/videocard.jsx';
 
 export default function Home() {
+    const VisibleCount= [Count, SetvisibleCount] , useState(0)
     return(
         <div>
         <div className="Home-page">
