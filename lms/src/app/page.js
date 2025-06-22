@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div className='video-editor'>
                 {visiblevideos.map(video => (
-                    <div key={video.id} className='video-card'>
+                    <a key={video.id} className='video-card'>
                         <img
                         src={video.thumbnail}
                         title={video.title}
@@ -64,7 +64,7 @@ export default function Home() {
                         </div>
                         <p>{video.price}</p>
                     </div>
-                    </div>
+                    </a>
                 ))}
             </div>
             {Count < videos.length &&(
