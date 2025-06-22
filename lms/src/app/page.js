@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import {videos} from './components/videocard.jsx';
+import Link  from 'next/link';
 
 export default function Home() {
     const[Count,  setVisibleCount] = useState(4);
@@ -49,8 +50,7 @@ export default function Home() {
             </div>
             <div className='video-editor'>
                 {visiblevideos.map(video => (
-                    <Link key={video.id} href={`/video/${video.id}`}>
-                    <a className='video-card'>
+                    <Link key={video.id} href={`/video/${video.id}`} className='video-card'>
                         <img
                         src={video.thumbnail}
                         title={video.title}
@@ -65,7 +65,6 @@ export default function Home() {
                         </div>
                         <p>{video.price}</p>
                     </div>
-                    </a>
                     </Link>
                 ))}
             </div>
