@@ -1,6 +1,6 @@
 export const videos = [
     {
-        id: 1,
+        id: html-css,
         thumbnail: 'images/html.png',
         title: "Html && css Basics",
         name: 'greatstock',
@@ -8,7 +8,7 @@ export const videos = [
         price: '39.99$$'
     },
         {
-        id: 1,
+        id: javascript,
         thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
@@ -16,7 +16,7 @@ export const videos = [
         price: '39.99$$'
     },
             {
-        id: 1,
+        id: python,
         thumbnail: 'images/python.webp',
         title: "python Basics",
         name: 'greatstock',
@@ -24,7 +24,7 @@ export const videos = [
         price: '39.99$$'
     },
             {
-        id: 1,
+        id: node.js,
         thumbnail: 'images/node.png',
         title: "Node Js",
         name: 'greatstock',
@@ -32,7 +32,7 @@ export const videos = [
         price: '39.99$$'
     },
                 {
-        id: 1,
+        id: javascript,
         thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
@@ -40,7 +40,7 @@ export const videos = [
         price: '39.99$$'
     },
                     {
-        id: 1,
+        id: javascript,
         thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
@@ -48,7 +48,7 @@ export const videos = [
         price: '39.99$$'
     },
                     {
-        id: 1,
+        id: javascript,
         thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
@@ -56,7 +56,7 @@ export const videos = [
         price: '39.99$$'
     },
                     {
-        id: 1,
+        id: javascript,
         thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
