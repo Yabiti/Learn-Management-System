@@ -1,7 +1,7 @@
 export const videos = [
     {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
+        thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 5,
