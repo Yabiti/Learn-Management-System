@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
-import {videos} from './components/videocard.jsx';
+import { videos } from '@/components/videocard';
 
 export default function VideoDetail() {
   const { id } = useParams();
