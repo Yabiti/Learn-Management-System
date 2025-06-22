@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div className='video-editor'>
                 {visiblevideos.map(video => (
-                    <a key={video.id} className='video-card'>
+                    <a href={`/video/${video.id}`} className='video-card'>
                         <img
                         src={video.thumbnail}
                         title={video.title}
