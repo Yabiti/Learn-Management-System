@@ -131,27 +131,30 @@ html{
 }
 
 .video-editor {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(350px, 1fr));
   display: grid;
-  padding: 20px 120px 0 120px;
+  padding: 20px 160px 0 120px;
   gap: 30px;
 }
 .video-card {
-  width: 300px;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
+  object-fit: cover;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
   padding: 0;
+  margin: 0;
 }
 
-.video-card iframe {
+.video-card img {
   width: 100%;
-  height: 170px;
-  border: none;
+  height: 200px;
+  object-fit: cover;
   display: block;
+  border-radius: 10px 10px 0 0;
 }
 
 .rating {

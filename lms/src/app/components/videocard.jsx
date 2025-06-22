@@ -1,15 +1,15 @@
 export const videos = [
     {
         id: 1,
-        thumbnail: 'images/js.png',
-        title: "Javascript Basics",
+        thumbnail: 'images/html.png',
+        title: "Html && css Basics",
         name: 'greatstock',
         rating: 5,
         price: '39.99$$'
     },
         {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
+        thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 4,
@@ -17,23 +17,23 @@ export const videos = [
     },
             {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
-        title: "Javascript Basics",
+        thumbnail: 'images/python.webp',
+        title: "python Basics",
         name: 'greatstock',
         rating: 5,
         price: '39.99$$'
     },
             {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
-        title: "Javascript Basics",
+        thumbnail: 'images/node.png',
+        title: "Node Js",
         name: 'greatstock',
         rating: 3.5,
         price: '39.99$$'
     },
                 {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
+        thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 3.5,
@@ -41,7 +41,7 @@ export const videos = [
     },
                     {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
+        thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 3.5,
@@ -49,7 +49,7 @@ export const videos = [
     },
                     {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
+        thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 3.5,
@@ -57,7 +57,7 @@ export const videos = [
     },
                     {
         id: 1,
-        url: 'https://www.youtube.com/embed/ajdRvxDWH4w',
+        thumbnail: 'images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 3.5,

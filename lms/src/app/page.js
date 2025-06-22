@@ -50,12 +50,12 @@ export default function Home() {
             <div className='video-editor'>
                 {visiblevideos.map(video => (
                     <div key={video.id} className='video-card'>
-                        <iframe
-                        src={video.url}
+                        <img
+                        src={video.thumbnail}
                         title={video.title}
                         name={video.name}
                         rating={video.rating}
-                        ></iframe>
+                        ></img>
                         <div className='video-details'>
                         <h3 className='title'>{video.title}</h3>
                         <p>{video.name}</p>
