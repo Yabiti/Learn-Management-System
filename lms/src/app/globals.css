@@ -82,6 +82,14 @@ html{
   border-radius: 10px;
   color: #C0C0C0;
 }
+
+.button1{
+  background-color:  #001F3F;
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  color: #C0C0C0;
+}
 .input-type{
   width: 300px;
   height: 30px;
@@ -176,7 +184,11 @@ html{
   padding: 10px 15px;
 }
 
-
+.d{
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+}
 .video-details h3 {
   margin: 0 0 5px 0;
   font-size: 16px;
@@ -298,6 +310,19 @@ html{
   font-size: 40px;
   font-weight: bold;
 }
+
+.secondpagee{
+  padding: 70px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.course-structure{
+  position: relative;
+  top: -300px;
+}
+
+
 
 .des{
   padding: 70px;

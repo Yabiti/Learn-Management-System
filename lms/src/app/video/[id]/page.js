@@ -22,17 +22,20 @@ export default function CoursePage() {
       <div className="video-id">
          <img
             src={video.thumbnail}
+            title={video.title}
+            name={video.name}
             rating={video.rating}
           ></img>
           <div className='video-details1'>
-          <h3 className='title'>{video.title}</h3>
-          <p>{video.name}</p>
-          <div className="rating">
-          {'★'.repeat(video.rating) + '☆'.repeat(5 - video.rating)}
-          </div>
-        <p>{video.price}</p>
+        <p className="d">{video.price}</p>
+        <p>{video.Hours}</p>
+        <button className="button1" type="submit">Enroll Now</button>
         </div>
         </div>
-    </div>
+        <div className="course-structure">
+          <h1 className="secondpagee">Course Structure</h1>
+        </div>
+        
+        </div>
   );
 }
