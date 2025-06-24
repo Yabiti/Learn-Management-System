@@ -277,8 +277,14 @@ html{
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   background-color: white;
+  align-items: center;
 }
 
+.wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .video-id img{
   width: 100%;
   display: block;
@@ -305,6 +311,8 @@ html{
 }
 
 .secondpage{
+  display: flex;
+  align-items: flex-start;
   padding: 20px;
   margin-left: 70px;
   font-size: 40px;
@@ -312,6 +320,7 @@ html{
 }
 
 .secondpagee{
+  display: flex;
   padding: 20px;
   margin-left: 70px;
   font-size: 30px;
@@ -320,6 +329,6 @@ html{
 
 .des{
   margin-left: 90px;
+  align-items: flex-start;
   position: relative;
 }
-
