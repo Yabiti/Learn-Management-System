@@ -22,7 +22,7 @@ export default function CoursePage() {
         ))}
       </p>
       <div className="video-id">
-        {!Enrolled ? (
+                  {!Enrolled ? (
           <img
             src={video.thumbnail}
             title={video.title}
@@ -31,8 +31,6 @@ export default function CoursePage() {
           />
         ) : (
           <iframe
-            width="100%"
-            height="315"
             src={video.url}
             title={video.title}
             frameBorder="0"
@@ -44,7 +42,7 @@ export default function CoursePage() {
           <p className="d">{video.price}</p>
           <p>{video.Hours}</p>
           {!Enrolled && (
-            <button className="button1" onClick={() => setEnrolled(true)}>
+            <button type="button" className="button1" onClick={() => setEnrolled(true)}>
               Enroll Now
             </button>
           )}

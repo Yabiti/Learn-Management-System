@@ -88,6 +88,7 @@ html{
   width: 350px;
   height: 50px;
   border-radius: 5px;
+  cursor: pointer;
   color: #C0C0C0;
 }
 .input-type{
@@ -271,8 +272,6 @@ html{
 .video-id{
   display: flex;
   flex-direction: column;
-  margin-top: -350px;
-  margin-left: 1100px;
   width: 500px;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -312,20 +311,13 @@ html{
 }
 
 .secondpagee{
-  padding: 70px;
+  padding-left: 70px;
+  margin: 10px;
   font-size: 30px;
   font-weight: bold;
 }
 
-.course-structure{
-  position: relative;
-  margin-top: -250px;
-}
-
-
-
 .des{
-  padding: 70px;
-  position: relative;
-  top: -120px;
+  padding-left: 70px;
+  margin: 10px;
 }
