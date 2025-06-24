@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import {videos} from './components/videocard.jsx';
+import {videos} from './components/VideoCard.jsx';
 import Link  from 'next/link';
 
 export default function Home() {

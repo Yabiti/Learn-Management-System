@@ -265,3 +265,15 @@ html{
   display: block;
   direction: rtl;
 }
+
+.secondpage{
+  padding: 70px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.des{
+  padding: 70px;
+  position: relative;
+  top: -120px;
+}
