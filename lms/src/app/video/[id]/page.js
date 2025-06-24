@@ -22,6 +22,7 @@ export default function CoursePage() {
         </span>
         ))}
       </p>
+      <div className="wra">
       <div className="video-id">
           {!Enrolled ? (
           <img
@@ -49,6 +50,7 @@ export default function CoursePage() {
           )}
         </div>
         </div>
+      </div>
       </div>
         <div className="course-structure">
           <h1 className="secondpagee">Course Description</h1>
