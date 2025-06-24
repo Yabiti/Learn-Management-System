@@ -22,7 +22,7 @@ export default function CoursePage() {
         ))}
       </p>
       <div className="video-id">
-                  {!enrolled ? (
+        {!Enrolled ? (
           <img
             src={video.thumbnail}
             title={video.title}
@@ -40,13 +40,16 @@ export default function CoursePage() {
             allowFullScreen
           />
         )}
-
           <div className='video-details1'>
-        <p className="d">{video.price}</p>
-        <p>{video.Hours}</p>
-        <button className="button1" type="submit">Enroll Now</button>
+          <p className="d">{video.price}</p>
+          <p>{video.Hours}</p>
+          {!Enrolled && (
+            <button className="button1" onClick={() => setEnrolled(true)}>
+              Enroll Now
+            </button>
+          )}
         </div>
-        </div>
+      </div>
         <div className="course-structure">
           <h1 className="secondpagee">Course Description</h1>
                 <p className='des'>{video.description.split('\n').map((line, index) => (
