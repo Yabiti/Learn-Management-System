@@ -1,5 +1,4 @@
 'use client';
-import {useState} from 'react';
 import { useParams } from 'next/navigation';
 import videos from '../../components/VideoCard';
 
@@ -20,9 +19,22 @@ export default function CoursePage() {
         </span>
         ))}
       </p>
-        <img 
-        src={video.thumbnail}
-        ></img>
+      <div className="video-img">
+         <img
+            src={video.thumbnail}
+            title={video.title}
+            name={video.name}
+            rating={video.rating}
+          ></img>
+          <div className='video-details'>
+          <h3 className='title'>{video.title}</h3>
+          <p>{video.name}</p>
+          <div className="rating">
+          {'★'.repeat(video.rating) + '☆'.repeat(5 - video.rating)}
+          </div>
+        <p>{video.price}</p>
+        </div>
+        </div>
     </div>
   );
 }
