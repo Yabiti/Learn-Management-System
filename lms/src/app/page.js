@@ -75,6 +75,7 @@ export default function Home() {
             )}
             <div className="category">
                 <h1>Learn anything, anytime, anywhere</h1>
+                <button className="btn" type="submit">Search</button>
             </div>
             </div>
     );
