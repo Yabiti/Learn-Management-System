@@ -73,6 +73,9 @@ export default function Home() {
                     <button onClick={Handleloadmore} className='load-btn'>Load More</button>
                 </div>
             )}
+            <div className="category">
+                <h1>Learn anything, anytime, anywhere</h1>
+            </div>
             </div>
     );
 }
