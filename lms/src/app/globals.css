@@ -305,19 +305,19 @@ html{
 }
 
 .secondpage{
-  padding: 70px;
+  padding: 20px;
+  margin-left: 70px;
   font-size: 40px;
   font-weight: bold;
 }
 
 .secondpagee{
-  padding-left: 70px;
-  margin: 10px;
+  padding: 20px;
+  margin-left: 70px;
   font-size: 30px;
   font-weight: bold;
 }
 
 .des{
-  padding-left: 70px;
-  margin: 10px;
+  margin-left: 90px;
 }
