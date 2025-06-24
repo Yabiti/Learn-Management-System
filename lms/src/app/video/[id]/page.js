@@ -1,5 +1,5 @@
 'use client';
-
+import {useState} from 'react';
 import { useParams } from 'next/navigation';
 import videos from '../../components/VideoCard';
 
@@ -20,7 +20,9 @@ export default function CoursePage() {
         </span>
         ))}
       </p>
-
+        <img 
+        src={video.thumbnail}
+        ></img>
     </div>
   );
 }
