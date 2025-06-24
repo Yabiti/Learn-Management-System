@@ -22,12 +22,25 @@ export default function CoursePage() {
         ))}
       </p>
       <div className="video-id">
-         <img
+                  {!enrolled ? (
+          <img
             src={video.thumbnail}
             title={video.title}
-            name={video.name}
-            rating={video.rating}
-          ></img>
+            alt={video.title}
+            className="thumbnail"
+          />
+        ) : (
+          <iframe
+            width="100%"
+            height="315"
+            src={video.url}
+            title={video.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        )}
+
           <div className='video-details1'>
         <p className="d">{video.price}</p>
         <p>{video.Hours}</p>
