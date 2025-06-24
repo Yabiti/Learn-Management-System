@@ -19,14 +19,12 @@ export default function CoursePage() {
         </span>
         ))}
       </p>
-      <div className="video-img">
+      <div className="video-id">
          <img
             src={video.thumbnail}
-            title={video.title}
-            name={video.name}
             rating={video.rating}
           ></img>
-          <div className='video-details'>
+          <div className='video-details1'>
           <h3 className='title'>{video.title}</h3>
           <p>{video.name}</p>
           <div className="rating">

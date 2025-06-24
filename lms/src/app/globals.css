@@ -172,6 +172,10 @@ html{
 .video-details {
   padding: 10px 15px;
 }
+.video-details1 {
+  padding: 10px 15px;
+}
+
 
 .video-details h3 {
   margin: 0 0 5px 0;
@@ -252,31 +256,24 @@ html{
   line-height: 30px;
 }
 
-.video-img {
+.video-id{
   display: flex;
   flex-direction: column;
-  align-items: end;
-  gap: 10px;
-  padding: 20px;
-  background: white;
   margin-top: -350px;
-  border-radius: 10px;
+  margin-left: 1100px;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
-.video-img img {
-  width: 300px;
+.video-id img{
+  width: 100%;
+  display: block;
   height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+  border-radius: 12px;
 }
-
-.video-details {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
 .subscribe{
   text-align: right;
   position: relative;
