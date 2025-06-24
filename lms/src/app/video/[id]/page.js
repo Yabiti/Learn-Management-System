@@ -33,9 +33,9 @@ export default function CoursePage() {
         </div>
         </div>
         <div className="course-structure">
-          <h1 className="secondpagee">Course Structure</h1>
+          <h1 className="secondpagee">Course Description</h1>
         </div>
-        
+      
         </div>
   );
 }
