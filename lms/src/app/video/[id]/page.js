@@ -23,7 +23,7 @@ export default function CoursePage() {
         ))}
       </p>
       <div className="video-id">
-                  {!Enrolled ? (
+          {!Enrolled ? (
           <img
             src={video.thumbnail}
             title={video.title}
@@ -48,7 +48,7 @@ export default function CoursePage() {
             </button>
           )}
         </div>
-      </div>
+        </div>
       </div>
         <div className="course-structure">
           <h1 className="secondpagee">Course Description</h1>
@@ -60,7 +60,7 @@ export default function CoursePage() {
         ))}
       </p>
         </div>
-      
         </div>
+
   );
 }
