@@ -1,9 +1,11 @@
 'use client';
+import {useState} from 'react';
 import { useParams } from 'next/navigation';
 import videos from '../../components/VideoCard';
 
 export default function CoursePage() {
   const { id } = useParams();
+  const[Enrolled, setEnrolled] = useState(false);
 
   const video = videos.find((v) => v.id === id);
 
@@ -34,6 +36,13 @@ export default function CoursePage() {
         </div>
         <div className="course-structure">
           <h1 className="secondpagee">Course Description</h1>
+                <p className='des'>{video.description.split('\n').map((line, index) => (
+        <span key={index}>
+        {line}
+        <br />
+        </span>
+        ))}
+      </p>
         </div>
       
         </div>
