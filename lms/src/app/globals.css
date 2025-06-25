@@ -55,6 +55,22 @@
 }
 }
 
+@media (max-width: 768px) {
+  .footer{
+    display: grid;
+  }
+  .loggo{
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  .subscribe{
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  .company{
+    margin-bottom: 170px;
+  }
+}
 
 
 body {
@@ -305,7 +321,9 @@ html{
   align-items: center;
   margin-top: -70px;
 }
-
+.c{
+  font-weight: bold;
+}
 .company ul {
   list-style: none;
   padding: 0;
