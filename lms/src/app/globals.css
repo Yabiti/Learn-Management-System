@@ -7,10 +7,12 @@
 
 @media only screen and (max-width: 768px) {
   .video-editor{
+    display: grid;
     flex-direction: column;
-    display: block;
-    justify-content: space-between;
-    position: relative;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+
   }
 }
 
@@ -18,7 +20,7 @@
 @media (max-width: 768px) {
   .category{
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
   }
   .Home-page h1{
     font-size: 25px;
@@ -50,7 +52,7 @@
  
   }
 .nav-links{ 
-  padding: 20px;
+  padding: 10px;
   padding-left: 100px;
 
 
@@ -86,6 +88,7 @@ body{
   padding: 0;
   background-color: #F5F5F5;
   color: #0a0a0a;
+  overflow-x: hidden;
 }
 
 
@@ -214,7 +217,7 @@ html{
 }
 
 .video-editor {
-  grid-template-columns: repeat(4, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   display: grid;
   padding: 20px 160px 0 120px;
   gap: 30px;
