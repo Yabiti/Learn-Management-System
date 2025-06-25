@@ -23,5 +23,24 @@ export default function CoursePage() {
         ))}
       </p>
       </div>
+       <div className="wra">
+      <div className="video-id">
+          {!Enrolled ? (
+          <img
+            src={video.thumbnail}
+            title={video.title}
+            alt={video.title}
+            className="thumbnail"
+          />
+        ) : (
+          <iframe
+            src={video.url}
+            title={video.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        )}
+      
       </div>
       )};
