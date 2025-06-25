@@ -41,6 +41,17 @@ export default function CoursePage() {
             allowFullScreen
           />
         )}
-      
+        
+          <div className='video-details1'>
+          <p className="d">{video.price}</p>
+          <p>{video.Hours}</p>
+          {!Enrolled && (
+            <button type="button" className="button1" onClick={() => setEnrolled(true)}>
+              Enroll Now
+            </button>
+          )}
+        </div>
+        </div>
+      </div>
       </div>
       )};
