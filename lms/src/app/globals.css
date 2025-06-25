@@ -6,10 +6,21 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    position: relative;
+    padding: 50px;
+  }
+  .nav-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction:column;
+    position: relative;
   }
 }
 

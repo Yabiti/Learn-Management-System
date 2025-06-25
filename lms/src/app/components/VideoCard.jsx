@@ -25,7 +25,7 @@ export const videos = [
     },
             {
         id: "python",
-        thumbnail: 'images/python.webp',
+        thumbnail: '/images/python.webp',
         title: "python Basics",
         name: 'greatstock',
         rating: 5,
