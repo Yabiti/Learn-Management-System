@@ -239,15 +239,10 @@ html{
  
 }
 
-#wraompany{
+.company{
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-#wra{
-  font-weight: bold;
-  position: relative;
 }
 
 .loggo{
@@ -257,14 +252,14 @@ html{
   padding: 30px;
 }
 
-#wraompany {
+.company {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -70px;
 }
 
-#wraompany ul {
+.company ul {
   list-style: none;
   padding: 0;
   margin: 0;
