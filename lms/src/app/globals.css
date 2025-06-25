@@ -14,6 +14,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .category{
     flex-direction: column;
@@ -32,8 +33,9 @@
   .btn{
     width: 90%;
     max-width: 200px;
-    padding: 5px 20px 10px 20px;
+    padding: 10px 30px 20px;
     margin: 10px auto;
+    margin-top: -1px;
   }
 
   .navbar{
@@ -135,7 +137,8 @@ html{
 .btn{
   background-color:  #001F3F;
   width: 100px;
-  height: 30px;
+  height: 40px;
+  border-radius: 5px;
   color: #C0C0C0;
 }
 
@@ -156,8 +159,10 @@ html{
 }
 .input-type{
   width: 300px;
-  height: 30px;
+  height: 20px;
   padding: 20px;
+  border: 0.5px  #C0C0C0;
+  border-radius: 7px;
 }
 
 .pay {
