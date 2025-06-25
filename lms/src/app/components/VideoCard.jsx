@@ -20,7 +20,7 @@ export const videos = [
         price: '39.99$$',
         url: "https://www.youtube.com/embed/ajdRvxDWH4w",
         description: "This course provides a comprehensive introduction to the foundational building blocks of the web:\n HTML and CSS. You'll learn how to structure web pages using semantic HTML elements and bring\n them to life with beautifully styled layouts using CSS. Starting from basic tags and styles, you'll gradually progress\n to advanced topics.",
-        thumbnail: 'images/js.png',
+        Hours: "49 hrs, 30minutes | 4 Lessons"
 
     },
             {
