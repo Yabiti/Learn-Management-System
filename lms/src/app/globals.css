@@ -5,8 +5,21 @@
   --foreground: #171717;
 }
 
+@media (max-width: 768px) {
+  .Home-page h1{
+    font-size: 25px;
+  }
+  .form{
+    display: flex;
 
-@media (max-width: 750px) {
+  }
+ .video-editor{
+  display: grid;
+
+ }
+}
+
+@media (max-width: 768px) {
   .navbar{
     display: flex;
     flex-direction: column;
@@ -16,10 +29,24 @@
   }
   .logo{
     margin-right: 0;
+ 
   }
+.nav-links{ 
+  padding: 20px;
+  padding-left: 100px;
+
+
+}
 }
 
+@media (max-width: 768px) {
+  .btn{
+    padding-left: 30px;
+    text-align: center;
+    justify-content: center;
+  }
 
+}
 body {
   background: var(--background);
   color: var(--foreground);
