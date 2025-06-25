@@ -13,7 +13,7 @@ export const videos = [
     },
         {
         id: "javascript",
-        thumbnail: 'images/js.png',
+        thumbnail: '/images/js.png',
         title: "Javascript Basics",
         name: 'greatstock',
         rating: 4,
