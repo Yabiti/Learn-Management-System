@@ -14,8 +14,9 @@ export default function CoursePage() {
   return (
     <div>
       <div className="wrap">
-      <h1 className='secondpage'>{video.title}</h1>
-      <p className='des'>{video.description.split('\n').map((line, index) => (
+      <div id="wrap">
+      <h1 className="secondpage">{video.title}</h1>
+      <p className="des">{video.description.split('\n').map((line, index) => (
         <span key={index}>
         {line}
         <br />
@@ -23,7 +24,7 @@ export default function CoursePage() {
         ))}
       </p>
       </div>
-       <div className="wra">
+      <div className="idd">
       <div className="video-id">
           {!Enrolled ? (
           <img
@@ -54,4 +55,18 @@ export default function CoursePage() {
         </div>
       </div>
       </div>
-      )};
+      
+        <div className="course-structure">
+          <h1 className="secondpagee">Course Description</h1>
+                <p className='dess'>{video.description.split('\n').map((line, index) => (
+        <span key={index}>
+        {line}
+        <br />
+        </span>
+        ))}
+      </p>
+        </div>
+        </div>
+
+  );
+}
