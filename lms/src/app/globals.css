@@ -5,7 +5,20 @@
   --foreground: #171717;
 }
 
+@media only screen and (max-width: 768px) {
+  .video-editor{
+    flex-direction: column;
+    display: block;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
 @media (max-width: 768px) {
+  .category{
+    flex-direction: column;
+    padding: 20px;
+  }
   .Home-page h1{
     font-size: 25px;
   }
@@ -13,13 +26,16 @@
     display: flex;
 
   }
- .video-editor{
-  display: grid;
-
- }
 }
 
 @media (max-width: 768px) {
+  .btn{
+    width: 90%;
+    max-width: 200px;
+    padding: 5px 20px 10px 20px;
+    margin: 10px auto;
+  }
+
   .navbar{
     display: flex;
     flex-direction: column;
@@ -39,14 +55,8 @@
 }
 }
 
-@media (max-width: 768px) {
-  .btn{
-    padding-left: 30px;
-    text-align: center;
-    justify-content: center;
-  }
 
-}
+
 body {
   background: var(--background);
   color: var(--foreground);
