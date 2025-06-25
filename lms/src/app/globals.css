@@ -14,8 +14,15 @@
     padding: 10px;
 
   }
+
+
 }
 
+@media (max-width: 768px) {
+  .idd{
+    padding-left: 150px;
+  }
+}
 
 @media (max-width: 768px) {
   .category{
@@ -31,6 +38,20 @@
   }
 }
 
+
+@media (max-width: 768px) {
+  .wrap{
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+  .video-id{
+    padding-right: 370px;
+    position: relative;
+  }
+
+}
 @media (max-width: 768px) {
   .btn{
     width: 90%;
@@ -58,6 +79,7 @@
 
 }
 }
+
 
 @media (max-width: 768px) {
   .footer{
@@ -90,8 +112,6 @@ body{
   color: #0a0a0a;
   overflow-x: hidden;
 }
-
-
 
 html{
   scroll-behavior: smooth;
@@ -389,7 +409,6 @@ html{
 
 .secondpage{
   display: flex;
-  align-items: flex-start;
   padding: 90px;
   font-size: 40px;
   font-weight: bold;
