@@ -195,6 +195,45 @@ html{
   margin-top: 40px;
 }
 
+.enrollmentWrapper {
+  padding: 2rem;
+}
+
+.courseCard {
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.enrollButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.videoWrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.videoWrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+}
 
 .pay p {
   font-size: 20px;
