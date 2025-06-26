@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import videos from '../../components/VideoCard';
 
-// Sample courses — replace with your actual courses data or import
 const availableCourses = [
   { id: 'c1', title: 'React Basics' },
   { id: 'c2', title: 'Advanced JavaScript' },

@@ -9,10 +9,8 @@ export default function EducatorDashboard() {
     videos.filter((v) => v.name === educatorName)
   );
 
-  // State to control showing add course form
   const [showForm, setShowForm] = useState(false);
 
-  // State to hold new course data inputs
   const [newCourseData, setNewCourseData] = useState({
     title: '',
     price: '',
@@ -20,7 +18,6 @@ export default function EducatorDashboard() {
     hours: '',
   });
 
-  // Handle input change
   const handleChange = (e) => {
     setNewCourseData({
       ...newCourseData,
@@ -28,7 +25,6 @@ export default function EducatorDashboard() {
     });
   };
 
-  // Add new course on form submit
   const handleAddSubmit = (e) => {
     e.preventDefault();
 
@@ -54,7 +50,6 @@ export default function EducatorDashboard() {
     setNewCourseData({ title: '', price: '', description: '', hours: '' });
   };
 
-  // Remove course
   const handleRemove = (id) => {
     const updated = myCourses.filter((course) => course.id !== id);
     setMyCourses(updated);
@@ -79,7 +74,6 @@ export default function EducatorDashboard() {
         ➕ Add New Course
       </button>
 
-      {/* Show add course form */}
       {showForm && (
         <form
           onSubmit={handleAddSubmit}
@@ -173,7 +167,6 @@ export default function EducatorDashboard() {
         </form>
       )}
 
-      {/* List of courses */}
       {myCourses.map((course) => (
         <div
           key={course.id}
