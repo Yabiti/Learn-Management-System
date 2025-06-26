@@ -1,4 +1,5 @@
 'use client';
+import videos from '../../components/VideoCard';
 
 export default function EducatorDashboard() {
   const educatorName = 'greatstock';
