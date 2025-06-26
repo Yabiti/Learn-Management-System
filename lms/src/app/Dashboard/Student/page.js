@@ -1,68 +1,42 @@
-import React, { useState } from 'react';
+'use client';
+import { useState } from 'react';
 import videos from '../../components/VideoCard';
 
-const availableCourses = [
-  { id: 'c1', title: 'React Basics' },
-  { id: 'c2', title: 'Advanced JavaScript' },
-  { id: 'c3', title: 'Next.js for Beginners' },
-];
 
-export default function StudentEnrollment() {
-  const [selectedCourses, setSelectedCourses] = useState([]);
-  const [message, setMessage] = useState('');
+export default function MyEnrollments() {
+  const enrolledIds = ['html-css', 'python'];
+  const enrolledCourses = videos.filter(v => enrolledIds.includes(v.id));
 
-  const toggleCourse = (id) => {
-    if (selectedCourses.includes(id)) {
-      setSelectedCourses(selectedCourses.filter((cid) => cid !== id));
-    } else {
-      setSelectedCourses([...selectedCourses, id]);
-    }
-  };
+  const [watched, setWatched] = useState({});
 
-  const handleEnroll = () => {
-    if (selectedCourses.length === 0) {
-      setMessage('Please select at least one course to enroll.');
-      return;
-    }
-
-    setMessage(`You have enrolled in ${selectedCourses.length} course(s): ${selectedCourses.join(', ')}`);
-    // Clear selection after enrolling (optional)
-    setSelectedCourses([]);
-  };
+  const handleWatch = id => setWatched({ ...watched, [id]: true });
 
   return (
-    <div style={{ maxWidth: '400px', margin: 'auto', padding: '1rem' }}>
-      <h2>Available Courses</h2>
-      <ul style={{ listStyle: 'none', padding: 0 }}>
-        {availableCourses.map((course) => (
-          <li key={course.id} style={{ marginBottom: '0.5rem' }}>
-            <label>
-              <input
-                type="checkbox"
-                checked={selectedCourses.includes(course.id)}
-                onChange={() => toggleCourse(course.id)}
-              />{' '}
-              {course.title}
-            </label>
-          </li>
-        ))}
-      </ul>
+    <div className="styles.enrollmentWrapper">
+      <h1 className="styles.enrollmentTitle">🎓 My Enrollments</h1>
 
-      <button
-        onClick={handleEnroll}
-        style={{
-          background: '#0070f3',
-          color: 'white',
-          padding: '0.5rem 1rem',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-        }}
-      >
-        Enroll
-      </button>
-
-      {message && <p style={{ marginTop: '1rem', color: 'green' }}>{message}</p>}
+      {enrolledCourses.map(course => (
+        <div key={course.id} className="styles.courseCard">
+          <h2>{course.title}</h2>
+          {!watched[course.id] ? (
+            <button
+              className="styles.watchButton"
+              onClick={() => handleWatch(course.id)}
+            >
+              ▶️ Start Watching
+            </button>
+          ) : (
+            <div className="styles.videoContainer">
+              <iframe
+                src={course.url}
+                title={course.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 }

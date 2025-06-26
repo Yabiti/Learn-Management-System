@@ -10,7 +10,7 @@ export default function Navbar(){
             </div>
             <div className="nav-links">
                 <Link href="/Dashboard/Educator">Educator Dashboard</Link>
-                <Link href="/Dashboard/Student">Student Enrollment</Link>
+                <Link href="/Dashboard/Student">My Enrollments</Link>
             </div>
         </nav>
     );
