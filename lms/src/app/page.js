@@ -5,6 +5,9 @@ import Link  from 'next/link';
 
 export default function Home() {
     const[Count,  setVisibleCount] = useState(4);
+    const [accountCreated, setAccountCreated] = useState(false);
+    const [showForm, setShowForm] = useState(false);
+
     const Handleloadmore = () => {
          setVisibleCount(prev => prev + 4);
     };
@@ -21,6 +24,38 @@ export default function Home() {
             <input className="input-type" type="text"  placeholder="search for courses" />
             <button className="btn" type="submit">Search</button>
         </form>
+        {!accountCreated && !showForm && (
+  <div className="create-account-start">
+    <button onClick={() => setShowForm(true)} className="btn">
+      Create Account
+    </button>
+  </div>
+)}
+
+{showForm && !accountCreated && (
+  <form
+    className="account-form"
+    onSubmit={(e) => {
+      e.preventDefault();
+      setAccountCreated(true);
+      setShowForm(false);
+    }}
+  >
+    <h3>Create Account</h3>
+    <input type="email" placeholder="Email" required className="input-type" />
+    <input type="password" placeholder="Password" required className="input-type" />
+    <button type="submit" className="btn">Submit</button>
+  </form>
+)}
+
+{accountCreated && (
+  <div className="after-account">
+    <p>Welcome to EduCore!</p>
+    <Link href="/enrollments">My Enrollments</Link><br />
+    <Link href="/educator">Educator Dashboard</Link>
+  </div>
+)}
+
         </div>
         <div className="pay">
             <p>Check out & Payment</p>
