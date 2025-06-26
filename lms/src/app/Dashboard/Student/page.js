@@ -1,35 +1,46 @@
 'use client';
+
 import { useState } from 'react';
 import videos from '../../components/VideoCard';
 
-
 export default function MyEnrollments() {
   const enrolledIds = ['html-css', 'python'];
-  const enrolledCourses = videos.filter(v => enrolledIds.includes(v.id));
+  const enrolledVideos = videos.filter(video => enrolledIds.includes(video.id));
 
-  const [watched, setWatched] = useState({});
+  const [enrolled, setEnrolled] = useState({});
 
-  const handleWatch = id => setWatched({ ...watched, [id]: true });
+  const handleEnroll = (id) => {
+    setEnrolled({ ...enrolled, [id]: true });
+  };
 
   return (
-    <div className="styles.enrollmentWrapper">
-      <h1 className="styles.enrollmentTitle">🎓 My Enrollments</h1>
+    <div className={styles.enrollmentWrapper}>
+      <h1 className={styles.enrollmentTitle}>🎓 My Enrollments</h1>
 
-      {enrolledCourses.map(course => (
-        <div key={course.id} className="styles.courseCard">
-          <h2>{course.title}</h2>
-          {!watched[course.id] ? (
-            <button
-              className="styles.watchButton"
-              onClick={() => handleWatch(course.id)}
-            >
-              ▶️ Start Watching
-            </button>
+      {enrolledVideos.map((video) => (
+        <div key={video.id} className={styles.courseCard}>
+          <h2>{video.title}</h2>
+
+          {!enrolled[video.id] ? (
+            <>
+              <img
+                src={video.thumbnail}
+                alt={video.title}
+                className={styles.thumbnail}
+              />
+              <p className={styles.price}>💰 {video.price}</p>
+              <button
+                className={styles.enrollButton}
+                onClick={() => handleEnroll(video.id)}
+              >
+                📚 Enroll Now
+              </button>
+            </>
           ) : (
-            <div className="styles.videoContainer">
+            <div className={styles.videoWrapper}>
               <iframe
-                src={course.url}
-                title={course.title}
+                src={video.url}
+                title={video.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
