@@ -197,17 +197,14 @@ html{
 
 .enrollmentWrapper {
   max-width: 500px;
-  padding: 2rem;
+  padding: 100px;
+  font-weight: bold;
 }
 
 .enrollmentTitle{
-  padding: 70px;
-}
-
-.enrollmentWrapper{
-  padding: 70px;
+  top: -50px;
+  position: relative;
   font-size: 25px;
-  font-weight: bold;
 }
 
 .courseCard {
