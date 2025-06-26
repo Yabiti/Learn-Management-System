@@ -161,14 +161,14 @@ html{
   width: 100px;
   height: 40px;
   border-radius: 5px;
-  color: #C0C0C0;
+  color: white;
 }
 
 .button{
   background-color:  #001F3F;
   width: 200px;
   border-radius: 10px;
-  color: #C0C0C0;
+  color: white;
 }
 
 .button1{
@@ -177,7 +177,7 @@ html{
   height: 50px;
   border-radius: 5px;
   cursor: pointer;
-  color: #C0C0C0;
+  color: white;
 }
 .input-type{
   width: 300px;
@@ -200,6 +200,9 @@ html{
   padding: 2rem;
 }
 
+.enrollmentTitle{
+  padding: 70px;
+}
 
 .enrollmentWrapper{
   padding: 70px;
@@ -212,7 +215,6 @@ html{
   border: 1px solid #ddd;
   border-radius: 8px;
 }
-
 
 
 .thumbnail {
