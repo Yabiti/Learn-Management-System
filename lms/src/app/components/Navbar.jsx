@@ -9,7 +9,7 @@ export default function Navbar(){
                 <h1>EduCore</h1>
             </div>
             <div className="nav-links">
-                <Link href="/">Educator Dashboard</Link>
+                <Link href="/dashboard/educator">Educator Dashboard</Link>
                 <Link href="/">Student Enrollment</Link>
             </div>
         </nav>
