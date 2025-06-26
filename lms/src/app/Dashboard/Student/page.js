@@ -14,11 +14,11 @@ export default function MyEnrollments() {
   };
 
   return (
-    <div className={styles.enrollmentWrapper}>
-      <h1 className={styles.enrollmentTitle}>🎓 My Enrollments</h1>
+    <div className="enrollmentWrapper">
+      <h1 className="enrollmentTitle">🎓 My Enrollments</h1>
 
       {enrolledVideos.map((video) => (
-        <div key={video.id} className={styles.courseCard}>
+        <div key={video.id} className="courseCard">
           <h2>{video.title}</h2>
 
           {!enrolled[video.id] ? (
@@ -26,18 +26,18 @@ export default function MyEnrollments() {
               <img
                 src={video.thumbnail}
                 alt={video.title}
-                className={styles.thumbnail}
+                className="thumbnail"
               />
-              <p className={styles.price}>💰 {video.price}</p>
+              <p className="price"> {video.price}</p>
               <button
-                className={styles.enrollButton}
+                className="enrollButton"
                 onClick={() => handleEnroll(video.id)}
               >
-                📚 Enroll Now
+                 Enroll Now
               </button>
             </>
           ) : (
-            <div className={styles.videoWrapper}>
+            <div className="videoWrapper">
               <iframe
                 src={video.url}
                 title={video.title}
