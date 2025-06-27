@@ -184,6 +184,11 @@ html{
   cursor: pointer;
   color: white;
 }
+
+.i{
+  width: 100%;
+  height: auto;
+}
 .input-type{
   width: 300px;
   height: 20px;

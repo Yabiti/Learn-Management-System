@@ -34,7 +34,7 @@ export default function CoursePage() {
             className="thumbnail"
           />
         ) : (
-          <iframe
+          <iframe className="i"
             src={video.url}
             title={video.title}
             frameBorder="0"
