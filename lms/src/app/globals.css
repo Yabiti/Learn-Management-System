@@ -200,7 +200,12 @@ html{
   padding: 100px;
   font-weight: bold;
 }
-
+.submit{
+  background-color: #001F3F;
+  color: white;
+  width: 100px;
+  height: 30px;
+}
 .button2{
   background-color: #001F3F;
   color: white;
@@ -438,6 +443,33 @@ html{
   display: flex;
   justify-content: center;
   margin-top: 30px;
+}
+
+.card-form {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-form input {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.create-account-btn{
+  background-color: #001F3F;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
 }
 
 .load-btn {
