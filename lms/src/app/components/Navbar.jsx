@@ -34,6 +34,20 @@ export default function Navbar() {
                             <div className="card-form">
                                 <form onSubmit={handleFormSubmit}>
                                     <input
+                                    type="text"
+                                    name="First Name"
+                                    placeholder="First Name"
+                                    onChange={handleInputChange}
+                                    required
+                                    />
+                                    <input
+                                    type="text"
+                                    name="Last Name"
+                                    placeholder="Last Name"
+                                    onChange={handleInputChange}
+                                    required
+                                    />
+                                    <input
                                         type="email"
                                         name="email"
                                         placeholder="Email"
